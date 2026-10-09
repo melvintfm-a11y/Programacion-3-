@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios Reinventados - La Resistencia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="nav-container">
+            <div class="logo">LA RESISTENCIA<span>.DO</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Historia del Misterio</a></li>
+                <li><a href="servicios.html" class="active">Servicios Reinventados</a></li>
+                <li><a href="contacto.html">Contacto y Pruebas</a></li>
+            </ul>
+            <button id="theme-toggle" class="btn-theme">Modo Claro/Oscuro</button>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="services-header">
+            <h1>Servicios v2.0 <span class="neon-text">Anti-Hackeo</span></h1>
+            <p>Hemos evolucionado nuestro modelo de negocio para ofrecerte experiencias físicas y digitales impenetrables.</p>
+        </section>
+
+        <section class="grid-services">
+            <article class="service-card">
+                <h3>☕ Café Arabica</h3>
+                <p>Granos 100% orgánicos de Jarabacoa, tostados con precisión para un sabor perfecto.</p>
+            </article>
+            <article class="service-card">
+                <h3>💻 Búnker Coworking</h3>
+                <p>Espacios de trabajo con internet de fibra óptica cuántica, redundancia eléctrica y redes VPN privadas instaladas.</p>
+            </article>
+            <article class="service-card">
+                <h3>🛡️ Ciber-Talleres Pyme</h3>
+                <p>Capacitación para pequeños empresarios dominicanos sobre cómo proteger sus activos digitales de ciberataques.</p>
+            </article>
+        </section>
+
+        
+        <section class="calculator-section">
+            <h2>Cotizador Rápido de Coworking (Integración en Línea)</h2>
+            <form id="quote-form" onsubmit="calculateQuote(event)">
+                <label for="hours">Horas de uso:</label>
+                <input type="number" id="hours" min="1" max="24" value="2" required>
+                
+                <label for="type">Tipo de Espacio:</label>
+                <select id="type">
+                    <option value="150">Escritorio Flex (RD$ 150/hr)</option>
+                    <option value="300">Oficina Privada Búnker (RD$ 300/hr)</option>
+                </select>
+                <button type="submit">Calcular Total</button>
+            </form>
+            <div id="quote-result" class="quote-result"></div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2026 CyberCafé La Resistencia S.R.L.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

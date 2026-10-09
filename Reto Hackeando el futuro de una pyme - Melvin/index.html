@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Resistencia CyberCafé - El Renacimiento</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id="error-screen" class="error-overlay">
+        <div class="glitch-box">
+            <h1 class="glitch-text" data-text="ERROR 404: PYME NOT FOUND">ERROR 404: PYME NOT FOUND</h1>
+            <p>"Tu negocio ha sido borrado de la existencia digital. Si quieres recuperarlo, deberás reinventarlo..."</p>
+            <button id="recover-btn" onclick="recoverSite()">[ RESTAURAR PRESENCIA DIGITAL ]</button>
+        </div>
+    </div>
+
+    <header class="main-header">
+        <nav class="nav-container">
+            <div class="logo">LA RESISTENCIA<span>.DO</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Historia del Misterio</a></li>
+                <li><a href="servicios.html">Servicios Reinventados</a></li>
+                <li><a href="contacto.html">Contacto y Pruebas</a></li>
+            </ul>
+            <button id="theme-toggle" class="btn-theme">Modo Claro/Oscuro</button>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="hero-section">
+            <h1 class="hero-title">Intentaron borrarnos. <br><span class="neon-text">Volvimos indestructibles.</span></h1>
+            <p class="hero-subtitle">
+                De la noche a la mañana, CyberCafé La Resistencia desapareció del mapa digital. Pero un ataque no borra nuestra pasión. Hemos resurgido desde cero, blindados con innovación y la mejor experiencia de café y coworking de Santo Domingo.
+            </p>
+        </section>
+
+        <section class="story-section">
+            <h2>El Incidente del USB Misterioso</h2>
+            <div class="timeline">
+                <article class="timeline-card">
+                    <h3>01:00 AM - El Apagón Digital</h3>
+                    <p>Nuestra web, redes sociales y registros en la nube desaparecieron simultáneamente sin dejar rastro.</p>
+                </article>
+                <article class="timeline-card">
+                    <h3>08:00 AM - El Hallazgo</h3>
+                    <p>Encontramos un USB sobre el mostrador con el mensaje: <em>"Si quieres recuperarlo, deberás reinventarlo"</em>.</p>
+                </article>
+                <article class="timeline-card secret-trigger" onclick="triggerEasterEgg()">
+                    <h3>12:00 PM - El Renacimiento ⚡</h3>
+                    <p>Aceptamos el reto. Reconstruimos nuestro ecosistema digital desde las cenizas. (Haz clic aquí para activar el protocolo secreto).</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <div id="chatbot" class="chatbot-container">
+        <div class="chatbot-header" onclick="toggleChat()">
+            <span>🤖 Asistente A.I. Resistencia</span>
+            <span id="chat-toggle-icon">▲</span>
+        </div>
+        <div id="chatbot-body" class="chatbot-body hidden">
+            <div id="chat-logs" class="chat-logs">
+                <p class="bot-msg">¡Hola! Soy la IA de La Resistencia. ¿En qué te puedo guiar en esta nueva era de la empresa?</p>
+            </div>
+            <div class="chat-input-area">
+                <input type="text" id="chat-input" placeholder="Escribe 'servicios', 'menu' o 'contacto'...">
+                <button onclick="sendChatMessage()">Enviar</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <p>&copy; 2026 CyberCafé La Resistencia S.R.L. — Reconstruido con tecnología y resiliencia.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
