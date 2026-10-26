@@ -1,0 +1,15 @@
+los pasos que hice para crear la aplicacion fueron los siguientes:
+primero como ya tenia el node.js instalado me salte esa parte y 
+lo que hice despues fue crear mi carpeta y abrirlo en vsc 
+despues puse el siguiente comando npm para tener todos los archivos necesarios
+para que react funcione en .la computadora despues puse Y para que descargue todo
+le di todo a que Si y termino de descargarse una ves que se acabo a si le puse de nombre el mismo de la carpeta
+y ya se termino esas descargas y se puso a correr y ya empezo el Dev Server
+
+los comandos fueron estos:
+1. npm create vite@latest . -- --template react
+despues me dio los datos de mi http://localhost:5173/
+
+y ya despues abri app.jsx y app.css y borre lo que ya estaba ahi y cree mi juego tres en raya con tematica dominicana
+el tres en raya Se desarrolló el proyecto aplicando componentes funcionales, estados 
+con useState y una temática dominicana con los símbolos
